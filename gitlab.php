@@ -48,7 +48,7 @@ if ($branch === 'refs/heads/master')
 	fwrite($fs, '======================================================================='.PHP_EOL);
 	$fs and fclose($fs);
 	/* then pull master */
-	exec("/mnt/www/wuliu.weipeiapp.com/master_deploy.sh");
+	exec("/mnt/www/wuliu.weipeiapp.com/public/gitlab-webhook-php/master_deploy.sh");
 	} 
 else 
 	{
@@ -57,6 +57,6 @@ else
 	fwrite($fs, '======================================================================='.PHP_EOL);
 	$fs and fclose($fs);
 	/* pull devel branch */
-	exec("/mnt/www/wuliu.weipeiapp.com/develop_deploy.sh");
+	exec("/mnt/www/wuliu.weipeiapp.com/public/gitlab-webhook-php/develop_deploy.sh");
 	}
 ?>
