@@ -3,8 +3,8 @@
 /* file.php?token=oGN3YTBuPizLa5Pwgx8ICvoNn3OqFVFKBOxtwchjs2a8z8vOdEqcUiLWsvjfz5j */
 
 /* security */
-$access_token = 'oGN3YTBuPizLa5Pwgx8ICvoNn3OqFVFKBOxtwchjs2a8z8vOdEqcUiLWsvjfz5j';
-$access_ip = array('122.34.65.90');
+$access_token = 'MmNmMGRmMGI2Y2EyYjY3NzFjMzRjODkzZTQ3NjY5M2Y=';
+$access_ip = array('118.178.58.31');
 
 /* get user token and ip address */
 $client_token = $_GET['token'];
@@ -48,7 +48,7 @@ if ($branch === 'refs/heads/master')
 	fwrite($fs, '======================================================================='.PHP_EOL);
 	$fs and fclose($fs);
 	/* then pull master */
-	exec("/home/deploy/master_deploy.sh");
+	exec("/mnt/www/wuliu.weipeiapp.com/master_deploy.sh");
 	} 
 else 
 	{
@@ -57,6 +57,6 @@ else
 	fwrite($fs, '======================================================================='.PHP_EOL);
 	$fs and fclose($fs);
 	/* pull devel branch */
-	exec("/home/deploy/devel_deploy.sh");
+	exec("/mnt/www/wuliu.weipeiapp.com/develop_deploy.sh");
 	}
 ?>
