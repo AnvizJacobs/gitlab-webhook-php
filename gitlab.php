@@ -7,7 +7,7 @@ $access_token = 'MmNmMGRmMGI2Y2EyYjY3NzFjMzRjODkzZTQ3NjY5M2Y=';
 $access_ip = array('118.178.58.31');
 
 /* get user token and ip address */
-$client_token = $_GET['token'];
+$client_token = $_REQUEST['token'];
 $client_ip = $_SERVER['REMOTE_ADDR'];
 
 /* create open log */
