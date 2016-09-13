@@ -56,7 +56,7 @@ $ sudo vi /usr/local/php/etc/php.ini
 
    进入你的gitlab控制台 =》选择项目 =》 设置 =》 Webhooks设置，新加Webhooks
 
-   ![FD9B927C-39FD-4DC7-B9F5-F8477410FF8C](/Users/chenghuiyong/Desktop/FD9B927C-39FD-4DC7-B9F5-F8477410FF8C.png)
+   ![FD9B927C-39FD-4DC7-B9F5-F8477410FF8C](./FD9B927C-39FD-4DC7-B9F5-F8477410FF8C.png)
 
    ​
 
