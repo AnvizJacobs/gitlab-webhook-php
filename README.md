@@ -1,10 +1,10 @@
-# GitLab Web Hook For PHP
+\# GitLab Web Hook For PHP
 
 
 
 ### 开始使用
 
-​  1. 此Webhook脚本依赖PHP运行环境，同时需要有exec函数执行权限。使用前需要先开启禁用的PHP部分可执行函数，参考以下设置
+​  服务器环境必须先安装git环境，Webhook脚本依赖PHP运行环境，同时需要有exec函数执行权限。使用前需要先开启禁用的PHP部分可执行函数，参考以下设置
 
 ```shell
 $ which php
@@ -15,12 +15,7 @@ $ sudo vi /usr/local/php/etc/php.ini
 #在disable_functions前面添加#
 ;disable_functions = passthru,exec,system,chroot,chgrp,chown,shell_exec,proc_open,proc_get_status,ini_alter,ini_restore,dl,openlog,syslog,readlink,symlink,popepassthru,stream_socket_server,fsocket,popen
 
-
 ```
-
-​  2. 服务器环境必须先安装git环境
-
-
 
 1. #### 在实际项目目录克隆远程仓库
 
@@ -35,7 +30,7 @@ $ sudo vi /usr/local/php/etc/php.ini
 
 2. #### 在项目目录克隆`Gitlab Web Hook For PHP`
 
-   进入项目目录，克隆https://github.com/bravist/gitlab-webhook-php。克隆完成后，需要将项目中带有{server} {project}字样的内容替换为自己的服务器IP与服务器目录
+   进入项目目录，克隆[gitlab web hook for php](https://github.com/bravist/gitlab-webhook-php)。克隆完成后，需要将项目中带有{server} {project}字样的内容替换为自己的服务器IP与服务器目录
 
    ```shell
    $ git clone https://github.com/bravist/gitlab-webhook-php
@@ -56,7 +51,7 @@ $ sudo vi /usr/local/php/etc/php.ini
 
    进入你的gitlab控制台 =》选择项目 =》 设置 =》 Webhooks设置，新加Webhooks
 
-   ![FD9B927C-39FD-4DC7-B9F5-F8477410FF8C](./FD9B927C-39FD-4DC7-B9F5-F8477410FF8C.png)
+   ![FD9B927C-39FD-4DC7-B9F5-F8477410FF8C](FD9B927C-39FD-4DC7-B9F5-F8477410FF8C.png)
 
    ​
 
