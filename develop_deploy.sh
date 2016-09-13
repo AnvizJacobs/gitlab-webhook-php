@@ -1,5 +1,5 @@
 #!/bin/bash
 
-cd /mnt/www/wuliu.weipeiapp.com
+cd /mnt/www/{project}
 git checkout develop
-git pull origin develop >> /mnt/www/wuliu.weipeiapp.com/public/deploy.log
+git pull origin develop >> /mnt/www/{project}/public/deploy.log

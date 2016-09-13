@@ -4,7 +4,7 @@
 
 /* security */
 $access_token = 'MmNmMGRmMGI2Y2EyYjY3NzFjMzRjODkzZTQ3NjY5M2Y=';
-$access_ip = array('118.178.58.31');
+$access_ip = array('{server}');
 
 /* get user token and ip address */
 $client_token = $_REQUEST['token'];
@@ -48,7 +48,7 @@ if ($branch === 'refs/heads/master')
 	fwrite($fs, '======================================================================='.PHP_EOL);
 	$fs and fclose($fs);
 	/* then pull master */
-	exec("/mnt/www/wuliu.weipeiapp.com/public/gitlab-webhook-php/master_deploy.sh");
+	exec("/mnt/www/{project}/public/gitlab-webhook-php/master_deploy.sh");
 	} 
 else 
 	{
@@ -57,6 +57,6 @@ else
 	fwrite($fs, '======================================================================='.PHP_EOL);
 	$fs and fclose($fs);
 	/* pull devel branch */
-	exec("/mnt/www/wuliu.weipeiapp.com/public/gitlab-webhook-php/develop_deploy.sh");
+	exec("/mnt/www/{project}/public/gitlab-webhook-php/develop_deploy.sh");
 	}
 ?>
